@@ -27,6 +27,16 @@ public class ProductController {
         modelAndView.addObject("products", productService.findAll());
         return modelAndView;
     }
+
+    @GetMapping("/detail/{id}")
+    public ModelAndView detail(@PathVariable Long id) {
+        ModelAndView modelAndView = new ModelAndView("/detail");
+
+        modelAndView.addObject("product", productService.findById(id).get());
+        return modelAndView;
+    }
+
+
     @GetMapping("/add/{id}")
     public String addToCart(@PathVariable Long id, @ModelAttribute Cart cart, @RequestParam("action") String action) {
         Optional<Product> productOptional = productService.findById(id);

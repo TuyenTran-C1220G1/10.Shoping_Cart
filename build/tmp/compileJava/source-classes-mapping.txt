@@ -1,5 +1,5 @@
-com/codegym/WebConfig.java
- com.codegym.WebConfig
+com/codegym/controller/ShoppingCartController.java
+ com.codegym.controller.ShoppingCartController
 com/codegym/AppConfig.java
  com.codegym.AppConfig
 com/codegym/model/Product.java
@@ -12,7 +12,7 @@ com/codegym/service/IProductService.java
  com.codegym.service.IProductService
 com/codegym/model/Cart.java
  com.codegym.model.Cart
+com/codegym/WebConfig.java
+ com.codegym.WebConfig
 com/codegym/controller/ProductController.java
  com.codegym.controller.ProductController
-com/codegym/controller/ShoppingCartController.java
- com.codegym.controller.ShoppingCartController
